@@ -624,7 +624,8 @@ const App = () => {
                     <span>Email Support</span>
                   </h4>
                   <p className="text-gray-700 mb-2">Send us detailed queries</p>
-                  <p className="font-semibold text-green-600">info@zakfancylight.com</p>
+                  <p className="font-semibold text-green-600">zakenterprises135@gmail.com
+                  </p>
                   <p className="text-sm text-gray-600">Response within 24 hours</p>
                 </div>
               </div>
@@ -636,8 +637,10 @@ const App = () => {
                     <span>Visit Our Store</span>
                   </h4>
                   <p className="text-gray-700 mb-2">See products in person</p>
-                  <p className="font-semibold text-purple-600">[Your Business Address]</p>
-                  <p className="text-sm text-gray-600">Rawalpindi, Punjab, Pakistan</p>
+                  <p className="text-sm text-gray-600">Shop No.57, 1st Floor, Liberty Plaza,
+                    Liaquat Road, Opposite Gordan College,
+                    Rawalpindi, Punjab
+                    Pakistan</p>
                 </div>
 
                 <div className="bg-yellow-50 p-6 rounded-lg">
@@ -646,8 +649,8 @@ const App = () => {
                     <span>Business Hours</span>
                   </h4>
                   <div className="text-gray-700 space-y-1">
-                    <p>Monday - Saturday: 9:00 AM - 7:00 PM</p>
-                    <p>Sunday: 10:00 AM - 5:00 PM</p>
+                    <p>Mon – Thu, Sat & Sun: 9:00 AM – 8:00 PM</p>
+                    <p>Friday: Closed</p>
                   </div>
                 </div>
               </div>

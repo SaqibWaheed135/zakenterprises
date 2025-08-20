@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Menu, X, Phone, Mail, MapPin, Clock, ShoppingBag, Users, Award, Shield, FileText, Eye, Lock } from 'lucide-react';
 
+
+
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
@@ -15,7 +17,7 @@ const App = () => {
     support: 'Support'
   };
 
-  const Header = () => (
+   const Header = () => (
     <header className="bg-gradient-to-r from-blue-900 to-purple-900 text-white shadow-lg sticky top-0 z-50 mg-10">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
@@ -409,14 +411,14 @@ const App = () => {
         <div className="bg-white p-8 rounded-lg shadow-lg">
           <div className="flex items-center space-x-3 mb-6">
             <Shield className="w-8 h-8 text-blue-500" />
-            <h3 className="text-2xl font-semibold">Your Privacy Matters</h3>
+            <h3 className="text-2xl font-semibold text-black">Your Privacy Matters</h3>
           </div>
 
           <div className="space-y-8">
             <div>
               <h4 className="text-xl font-semibold mb-4 flex items-center space-x-2">
                 <Eye className="w-5 h-5 text-green-500" />
-                <span>Information We Collect</span>
+                <span className='text-black'>Information We Collect</span>
               </h4>
               <p className="text-gray-700 mb-4">We collect information to provide better services to our users. This includes:</p>
               <ul className="list-disc list-inside space-y-2 text-gray-600 ml-4">
@@ -430,7 +432,7 @@ const App = () => {
             <div>
               <h4 className="text-xl font-semibold mb-4 flex items-center space-x-2">
                 <Lock className="w-5 h-5 text-blue-500" />
-                <span>How We Use Your Information</span>
+                <span className='text-black'>How We Use Your Information</span>
               </h4>
               <ul className="list-disc list-inside space-y-2 text-gray-600 ml-4">
                 <li>Process and fulfill your orders</li>
@@ -442,7 +444,7 @@ const App = () => {
             </div>
 
             <div>
-              <h4 className="text-xl font-semibold mb-4">Data Security</h4>
+              <h4 className="text-xl font-semibold mb-4 text-black">Data Security</h4>
               <p className="text-gray-700">
                 We implement appropriate security measures to protect your personal information against unauthorized access,
                 alteration, disclosure, or destruction. Your data is encrypted and stored securely.
@@ -450,7 +452,7 @@ const App = () => {
             </div>
 
             <div>
-              <h4 className="text-xl font-semibold mb-4">Information Sharing</h4>
+              <h4 className="text-xl font-semibold mb-4 text-black">Information Sharing</h4>
               <p className="text-gray-700">
                 We do not sell, trade, or otherwise transfer your personal information to third parties without your consent,
                 except as described in this policy or when required by law.
@@ -458,7 +460,7 @@ const App = () => {
             </div>
 
             <div>
-              <h4 className="text-xl font-semibold mb-4">Your Rights</h4>
+              <h4 className="text-xl font-semibold mb-4 text-black">Your Rights</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-600 ml-4">
                 <li>Access and review your personal information</li>
                 <li>Request correction of inaccurate information</li>
@@ -468,7 +470,7 @@ const App = () => {
             </div>
 
             <div>
-              <h4 className="text-xl font-semibold mb-4">Contact Us</h4>
+              <h4 className="text-xl font-semibold mb-4 text-black">Contact Us</h4>
               <p className="text-gray-700">
                 If you have questions about this Privacy Policy, please contact us at:
               </p>
@@ -505,12 +507,12 @@ const App = () => {
         <div className="bg-gray-50 p-8 rounded-lg shadow-lg">
           <div className="flex items-center space-x-3 mb-6">
             <FileText className="w-8 h-8 text-blue-500" />
-            <h3 className="text-2xl font-semibold">Terms & Conditions</h3>
+            <h3 className="text-2xl font-semibold text-black">Terms & Conditions</h3>
           </div>
 
           <div className="space-y-8">
             <div>
-              <h4 className="text-xl font-semibold mb-4">Acceptance of Terms</h4>
+              <h4 className="text-xl font-semibold mb-4 text-black">Acceptance of Terms</h4>
               <p className="text-gray-700">
                 By accessing and using the ZAK FANCY LIGHT mobile application and services, you accept and agree to be bound by
                 the terms and provision of this agreement.
@@ -518,7 +520,7 @@ const App = () => {
             </div>
 
             <div>
-              <h4 className="text-xl font-semibold mb-4">Use of Services</h4>
+              <h4 className="text-xl font-semibold mb-4 text-black">Use of Services</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-600 ml-4">
                 <li>You must be at least 18 years old to use our services</li>
                 <li>You are responsible for maintaining the confidentiality of your account</li>
@@ -528,7 +530,7 @@ const App = () => {
             </div>
 
             <div>
-              <h4 className="text-xl font-semibold mb-4">Orders and Payment</h4>
+              <h4 className="text-xl font-semibold mb-4 text-black">Orders and Payment</h4>
               <ul className="list-disc list-inside space-y-2 text-gray-600 ml-4">
                 <li>All orders are subject to product availability</li>
                 <li>Prices are subject to change without notice</li>
@@ -538,7 +540,7 @@ const App = () => {
             </div>
 
             <div>
-              <h4 className="text-xl font-semibold mb-4">Product Information</h4>
+              <h4 className="text-xl font-semibold mb-4 text-black">Product Information</h4>
               <p className="text-gray-700">
                 We strive to provide accurate product information. However, we do not warrant that product descriptions,
                 pricing, or other content is accurate, complete, reliable, or error-free.
@@ -546,7 +548,7 @@ const App = () => {
             </div>
 
             <div>
-              <h4 className="text-xl font-semibold mb-4">Limitation of Liability</h4>
+              <h4 className="text-xl font-semibold mb-4 text-black">Limitation of Liability</h4>
               <p className="text-gray-700">
                 ZAK FANCY LIGHT shall not be liable for any indirect, incidental, special, consequential, or punitive damages,
                 including without limitation, loss of profits, data, use, goodwill, or other intangible losses.
@@ -554,7 +556,7 @@ const App = () => {
             </div>
 
             <div>
-              <h4 className="text-xl font-semibold mb-4">Intellectual Property</h4>
+              <h4 className="text-xl font-semibold mb-4 text-black">Intellectual Property</h4>
               <p className="text-gray-700">
                 All content, trademarks, and intellectual property on our platform are owned by ZAK FANCY LIGHT or our licensors
                 and are protected by copyright and other intellectual property laws.
@@ -562,7 +564,7 @@ const App = () => {
             </div>
 
             <div>
-              <h4 className="text-xl font-semibold mb-4">Modifications</h4>
+              <h4 className="text-xl font-semibold mb-4 text-black">Modifications</h4>
               <p className="text-gray-700">
                 We reserve the right to modify these terms at any time. Changes will be effective immediately upon posting.
                 Your continued use of the service constitutes acceptance of the modified terms.
@@ -570,7 +572,7 @@ const App = () => {
             </div>
 
             <div>
-              <h4 className="text-xl font-semibold mb-4">Governing Law</h4>
+              <h4 className="text-xl font-semibold mb-4 text-black">Governing Law</h4>
               <p className="text-gray-700">
                 These terms shall be governed by and construed in accordance with the laws of Pakistan,
                 without regard to its conflict of law provisions.
@@ -599,7 +601,7 @@ const App = () => {
           <div className="bg-white p-8 rounded-lg shadow-lg mb-8">
             <div className="flex items-center space-x-3 mb-6">
               <Phone className="w-8 h-8 text-blue-500" />
-              <h3 className="text-2xl font-semibold">We're Here to Help</h3>
+              <h3 className="text-2xl font-semibold text-black">We're Here to Help</h3>
             </div>
 
             <p className="text-lg text-gray-700 mb-8">
@@ -611,7 +613,7 @@ const App = () => {
                 <div className="bg-blue-50 p-6 rounded-lg">
                   <h4 className="font-semibold text-lg mb-3 flex items-center space-x-2">
                     <Phone className="w-5 h-5 text-blue-500" />
-                    <span>Phone Support</span>
+                    <span className='text-black'>Phone Support</span>
                   </h4>
                   <p className="text-gray-700 mb-2">Call us directly for immediate assistance</p>
                   <p className="font-semibold text-blue-600">+92-306-0000080</p>
@@ -621,7 +623,7 @@ const App = () => {
                 <div className="bg-green-50 p-6 rounded-lg">
                   <h4 className="font-semibold text-lg mb-3 flex items-center space-x-2">
                     <Mail className="w-5 h-5 text-green-500" />
-                    <span>Email Support</span>
+                    <span className='text-black'>Email Support</span>
                   </h4>
                   <p className="text-gray-700 mb-2">Send us detailed queries</p>
                   <p className="font-semibold text-green-600">zakenterprises135@gmail.com
@@ -634,7 +636,7 @@ const App = () => {
                 <div className="bg-purple-50 p-6 rounded-lg">
                   <h4 className="font-semibold text-lg mb-3 flex items-center space-x-2">
                     <MapPin className="w-5 h-5 text-purple-500" />
-                    <span>Visit Our Store</span>
+                    <span className='text-black'>Visit Our Store</span>
                   </h4>
                   <p className="text-gray-700 mb-2">See products in person</p>
                   <p className="text-sm text-gray-600">Shop No.57, 1st Floor, Liberty Plaza,
@@ -646,7 +648,7 @@ const App = () => {
                 <div className="bg-yellow-50 p-6 rounded-lg">
                   <h4 className="font-semibold text-lg mb-3 flex items-center space-x-2">
                     <Clock className="w-5 h-5 text-yellow-500" />
-                    <span>Business Hours</span>
+                    <span className='text-black'>Business Hours</span>
                   </h4>
                   <div className="text-gray-700 space-y-1">
                     <p>Mon – Thu, Sat & Sun: 9:00 AM – 8:00 PM</p>
@@ -810,8 +812,8 @@ const App = () => {
 
   const renderSection = () => {
     switch (activeSection) {
-      case 'home': return <HomeSection />;
-      case 'about': return <AboutSection />;
+      case 'home': return <HomeSection/>
+      case 'about': return <AboutSection/>;
       case 'services': return <ServicesSection />;
       case 'contact': return <ContactSection />;
       case 'privacy': return <PrivacySection />;

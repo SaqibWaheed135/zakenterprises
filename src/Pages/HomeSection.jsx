@@ -72,3 +72,4 @@ const HomeSection = () => (
       </section>
     </div>
   );
+  export default HomeSection;

@@ -1,4 +1,9 @@
-const Footer = () => (
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { ShoppingBag, Phone, Mail, MapPin } from 'lucide-react';
+
+const Footer = () => {
+  return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8">
@@ -20,54 +25,33 @@ const Footer = () => (
           <div>
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <div className="space-y-2">
-              <button
-                onClick={() => setActiveSection('home')}
-                className="block text-gray-400 hover:text-white transition-colors text-sm"
-              >
+              <Link to="/" className="block text-gray-400 hover:text-white transition-colors text-sm">
                 Home
-              </button>
-              <button
-                onClick={() => setActiveSection('about')}
-                className="block text-gray-400 hover:text-white transition-colors text-sm"
-              >
+              </Link>
+              <Link to="/about-us" className="block text-gray-400 hover:text-white transition-colors text-sm">
                 About Us
-              </button>
-              <button
-                onClick={() => setActiveSection('services')}
-                className="block text-gray-400 hover:text-white transition-colors text-sm"
-              >
+              </Link>
+              <Link to="/services" className="block text-gray-400 hover:text-white transition-colors text-sm">
                 Services
-              </button>
-              <button
-                onClick={() => setActiveSection('contact')}
-                className="block text-gray-400 hover:text-white transition-colors text-sm"
-              >
+              </Link>
+              <Link to="/contact" className="block text-gray-400 hover:text-white transition-colors text-sm">
                 Contact
-              </button>
+              </Link>
             </div>
           </div>
 
           <div>
             <h4 className="font-semibold mb-4">Support</h4>
             <div className="space-y-2">
-              <button
-                onClick={() => setActiveSection('support')}
-                className="block text-gray-400 hover:text-white transition-colors text-sm"
-              >
+              <Link to="/support" className="block text-gray-400 hover:text-white transition-colors text-sm">
                 Customer Support
-              </button>
-              <button
-                onClick={() => setActiveSection('privacy')}
-                className="block text-gray-400 hover:text-white transition-colors text-sm"
-              >
+              </Link>
+              <Link to="/privacy-policy" className="block text-gray-400 hover:text-white transition-colors text-sm">
                 Privacy Policy
-              </button>
-              <button
-                onClick={() => setActiveSection('terms')}
-                className="block text-gray-400 hover:text-white transition-colors text-sm"
-              >
+              </Link>
+              <Link to="/terms-of-service" className="block text-gray-400 hover:text-white transition-colors text-sm">
                 Terms of Service
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -80,8 +64,7 @@ const Footer = () => (
               </p>
               <p className="text-gray-400 flex items-center space-x-2">
                 <Mail className="w-4 h-4" />
-                <span>zakenterprises135@gmail.com
-                </span>
+                <span>zakenterprises135@gmail.com</span>
               </p>
               <p className="text-gray-400 flex items-start space-x-2">
                 <MapPin className="w-4 h-4 mt-1" />
@@ -95,8 +78,10 @@ const Footer = () => (
           <p className="text-gray-400 text-sm">
             © 2025 ZAK FANCY LIGHT & WHOLESALE DEALER. All rights reserved.
           </p>
-
         </div>
       </div>
     </footer>
   );
+};
+
+export default Footer;

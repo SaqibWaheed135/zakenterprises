@@ -84,3 +84,5 @@ import { Menu, X, Phone, Mail, MapPin, Clock, ShoppingBag, Users, Award, Shield,
       </div>
     </div>
   );
+
+    export default ServicesSection;

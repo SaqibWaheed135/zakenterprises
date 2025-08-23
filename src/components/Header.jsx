@@ -11,7 +11,7 @@ const Header = () => {
     { path: '/about-us', label: 'About' },
     { path: '/services', label: 'Services' },
     { path: '/contact', label: 'Contact' },
-    { path: '/privacy-policy', label: 'Privacy Policy' },
+    { path: '/privacy', label: 'Privacy Policy' },
     { path: '/terms-of-service', label: 'Terms of Service' },
     { path: '/support', label: 'Support' }
   ];

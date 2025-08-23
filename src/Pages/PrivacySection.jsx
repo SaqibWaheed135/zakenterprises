@@ -67,6 +67,27 @@ const PrivacySection = () => (
               is 100% secure.
             </p>
           </div>
+          {/* Data Deletion Policy */}
+
+
+          <div>
+            <h4 className="text-xl font-semibold mb-4 text-black">Data Deletion Policy</h4>
+            <p className="text-gray-700">
+              We respect your privacy and provide you the option to delete your account and personal data.
+            </p>
+            <ul className="list-disc list-inside space-y-2 text-gray-600 ml-4">
+              <li>
+                If you wish to delete your account and associated data, please contact us at <strong>zakenterprises135@gmail.com</strong> or submit a request through our{' '}
+                <a href="https://zakenterprises.netlify.app/contact" target="_blank" rel="noopener noreferrer">Contact Page</a>.
+              </li>
+
+
+
+              <li>Certain non-identifiable or legally required data may be retained as necessary for compliance, fraud prevention, or security.</li>
+              <li>If you do not submit a request, your data will be stored securely as long as your account remains active.</li>
+
+            </ul>
+          </div>
 
           {/* Information Sharing */}
           <div>
